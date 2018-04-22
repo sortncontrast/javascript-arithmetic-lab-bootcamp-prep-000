@@ -30,3 +30,12 @@ function makeInt(n) {
     return NaN;
   }
 }
+
+function preserveDecimal(n) {
+  n = parseFloat(n);
+  if (n%1 >= 0) {
+    return n;
+  } else {
+    return NaN;
+  }
+}

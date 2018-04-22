@@ -21,3 +21,12 @@ function inc(n) {
 function dec(n) {
   return n -= 1;
 }
+
+function makeInt(n) {
+  n = parseInt(n, 10);
+  if (n%1 === 0) {
+    return n;
+  } else {
+    return NaN;
+  }
+}
